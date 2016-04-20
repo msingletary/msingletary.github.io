@@ -1,0 +1,184 @@
+@import url(https://fonts.googleapis.com/css?family=Hind);
+@import url(https://fonts.googleapis.com/css?family=Quicksand);
+@import url(https://fonts.googleapis.com/css?family=Cinzel);
+@import url(https://fonts.googleapis.com/css?family=Tillana);
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+h1 {
+	color: #ffffff;
+	text-align: center;
+}
+
+h2 {
+	font-family: 'Montserrat', cursive;
+	margin-bottom: 10px;
+}
+
+body {
+	padding-top: 15px;
+	background-color: #F4F4F4;
+	font-family: 'Hind', sans-serif;
+}
+
+#navbar a {
+	color: #ffffff;;
+}
+
+#navbar a:hover {
+	color: #000000;
+}
+.navicon {
+	font-size: 18px;
+}
+
+
+
+.box {
+	background-color: #ffffff;
+	border: solid 1px rgba(160, 160, 160, 0.3);
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-bottom: 15px;
+}
+
+.information {
+	padding: 0;
+}
+
+
+
+hr {
+	/*horizonal line*/
+	border-color: rgba(160, 160, 160, 0.3);
+}
+
+t {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.anchor {
+	padding-top: 50px;
+}
+
+.job {
+	padding-top: 8px;
+}
+
+.job hr {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+
+@media (max-width: 767px) {
+	.date {
+		text-align: left;
+	}
+
+	.googlelogo {
+		display: inline-block;
+
+	}
+
+	.googlelogos {
+		text-align: center;
+		.inboxlogo {
+			margin-left: 15px;
+		}
+	}
+}
+
+ul {
+	padding-left: 16px;
+}
+
+.contacticon {
+	font-size: 24px;
+	text-align: center;
+	color: #222222;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.contactlink {
+	color: #222222;
+	display: inline-block;
+	vertical-align: middle;
+	padding-left: 10px;
+}
+
+.navbar-name {
+	color: #D3D3D3;
+	float: left;
+	height: 50px;
+	padding: 15px 15px;
+	font-size: 18px;
+	line-height: 20px;
+	opacity: 50%;
+}
+
+.navbar-name:hover,
+.navbar-name:focus {
+  text-decoration: none;
+  color: #fff;
+  background-color: transparent;
+}
+
+@media (min-width: 768px) {
+  .navbar > .container .navbar-name,
+  .navbar > .container-fluid .navbar-name {
+    margin-left: -15px;
+  }
+}
+
+.header {
+	background-color: #777777;
+	color: #ffffff;
+	padding: 10px 0px;
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+.skill {
+	/*default label*/
+	background-color: #777777;
+}
+
+/* customize at what size screen the navbar collapses */
+@media (max-width: 1000px) {
+  .navbar-header {
+      float: none;
+  }
+  .navbar-left,.navbar-right {
+      float: none !important;
+  }
+  .navbar-toggle {
+      display: block;
+  }
+  .navbar-collapse {
+      border-top: 1px solid transparent;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+  }
+  .navbar-fixed-top {
+      top: 0;
+      border-width: 0 0 1px;
+  }
+  .navbar-collapse.collapse {
+      display: none!important;
+  }
+  .navbar-nav {
+      float: none!important;
+      margin-top: 7.5px;
+  }
+  .navbar-nav>li {
+      float: none;
+  }
+  .navbar-nav>li>a {
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+  .collapse.in{
+      display:block !important;
+  }
+}
