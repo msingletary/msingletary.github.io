@@ -1,6 +1,3 @@
-
-@import url(https://fonts.googleapis.com/css?family=Montserrat);
-
 #right {
 	@media (max-width: 900px) {
 		margin-left: 10px;
@@ -11,27 +8,30 @@
 }
 
 .panel {
-	background-color: #E7E7E7;
-	background-color: #484F5D;
-	color: #fff;
-  /*box-shadow: 0 0 5px #fff;*/
+	border-radius: 0px;
+	box-shadow: none;
+	color: #000;
+}
+
+.panel-body {
+	padding-top: 0px;
 }
 
 h2 {
-	margin-bottom: 10px;
+	margin-bottom: 20px;
+	margin-top: 0;
 }
 
 body {
+	font-family: 'Raleway', serif;
+	font-weight: 100;
 	padding-top: 50px;
 	padding-left: 10px;
 	padding: 35px 10px 10px 10px;
-	/*background-color: #F4F4F4;*/
-	/*background-color: #645862; purple */
-	background-color: #282C34;
 }
 
 .navicon {
-	color: #ffffff;
+	color: #4C4C4C;
 	font-size: 20px;
 }
 a:hover .navicon{
@@ -39,11 +39,11 @@ a:hover .navicon{
 }
 
 hr {	/*horizonal line*/
-	border-color: rgba(160, 160, 160, 0.3);
+	border-color: RGBA(40, 44, 52, 0.5);
+	/*rgba(160, 160, 160, 0.3);*/
 }
 
 t {
-	font-family: 'Montserrat', sans-serif;
 	font-size: 16px;
 	font-weight: bold;
 }
@@ -56,38 +56,34 @@ ul {
 	introduction/about box styles
 **/
 .aboutBox {
-	height: 300px;
-  float: left;
 	margin-bottom: 20px;
-  overflow: hidden;
-  position: relative;
+  overflow: scroll;
   text-align: center;
-}
-
-.aboutBox .overlay {
-	height: 100%;
-  width: 100%;
-	padding: 10px 25px;
-  position: absolute;
-  overflow: hidden;
-  top: 0;
-  left: 0;
-}
-
-.aboutBox img {
-  display: block;
-  position: relative;
 }
 
 .aboutBox h1 {
-  background: rgba(0, 0, 0, 0.6);
+  background: #191919;
 	color: #fff;
-  font-size: 25px;
+	font-family: 'Raleway', serif;
+  font-size: 32px;
   text-transform: uppercase;
   text-align: center;
-	margin: 10px 0;
+	margin: 0px 15px 10px 15px;
   position: relative;
   padding: 20px;
+}
+
+.aboutBox .aboutme {
+	background: #4C4C4C;
+	color: #fff;
+	margin: 10px 15px;
+  padding: 10px;
+	/*@media (min-width: 767px) {
+		margin: 10px 20%;
+	}
+	@media (max-width: 767px) {
+		margin: 10px;
+	}*/
 }
 
 .aboutBox h4 {
@@ -103,24 +99,9 @@ ul {
 	font-weight: bold;
 }
 
-.aboutBox .aboutme {
-	background: rgba(0, 0, 0, 0.6);
-	color: #fff;
-  text-align: center;
-	margin: 10px;
-  position: relative;
-  padding: 15px;
-	/*@media (min-width: 767px) {
-		margin: 10px 20%;
-	}
-	@media (max-width: 767px) {
-		margin: 10px;
-	}*/
-}
-
 .aboutBox a.aboutLink  {
-	background-color: transparent;
-	border: 1px solid #fff;
+	background-color: #4C4C4C;
+	border: 1px solid #4C4C4C;
 	color: #fff;
   display: inline-block;
   text-decoration: none;
@@ -184,10 +165,6 @@ ul {
   transition: all 0.4s ease-in;
 }
 
-h2.abroad {
-	font-size: 20px;
-}
-
 .tile:hover h2, .tile:focus h2  {
 	font-size: 12px;
 	opacity: 1;
@@ -230,4 +207,23 @@ h2.abroad {
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
+}
+
+
+.label {
+	/*default label*/
+	background-color: #777777;
+}
+
+.icon {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.informationContainer {
+	padding-left: 5px;
+}
+
+.information {
+	padding: 0;
 }
