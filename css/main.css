@@ -99,21 +99,6 @@ ul {
 	font-weight: bold;
 }
 
-.aboutBox a.aboutLink  {
-	background-color: #4C4C4C;
-	border: 1px solid #4C4C4C;
-	color: #fff;
-  display: inline-block;
-  text-decoration: none;
-  padding: 7px 14px;
-  margin: 0 0 10px 0;
-}
-
-.aboutBox a.aboutLink:hover {
-	background: rgba(0, 0, 0, 0.3);
-  box-shadow: 0 0 5px #fff;
-}
-
 
 
 /**
