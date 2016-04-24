@@ -14,7 +14,40 @@
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target="#navbar" data-offset-top="50">
+
+        <nav id="navBarContainer" class="navbar navbar-default navbar-inverse navbar-fixed-top">
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand navbar-name" href="#">Meredith Singletary</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="navbar">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#education">Education<span class="sr-only">(current)</span></a></li>
+                <li><a href="#internships">Internships</a></li>
+                <li><a href="#experience">Experiences</a></li>
+                <li><a href="#abroad">Study Abroad</a></li>
+              </ul>
+
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="mailto:meredithsingletary@gmail.com"><i class="fa fa-envelope navicon"></i></a></li>
+                <li><a href="https://linkedin.com/in/meredithsingletary"><i class="fa fa-linkedin-square navicon"></i></a></li>
+                <li><a href="https://github.com/msingletary"><i class="fa fa-github navicon"></i></a></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+
+
     <div class="container-fluid">
       <div class="row top">
         <!-- navigation tiles -->
@@ -26,9 +59,9 @@
              <h4><em>software engineering student</em><br>graduating May 2017</h4>
             </div>
              <p>
-                <a href="mailto:meredithsingletary@gmail.com"><i class="fa fa-envelope navicon"></i></a>
-                <a href="https://linkedin.com/in/meredithsingletary"><i class="fa fa-linkedin-square navicon"></i></a>
-                <a href="https://github.com/msingletary"><i class="fa fa-github navicon"></i></a>
+                <a href="mailto:meredithsingletary@gmail.com"><i class="fa fa-envelope navicon aboutLink"></i></a>
+                <a href="https://linkedin.com/in/meredithsingletary"><i class="fa fa-linkedin-square navicon aboutLink"></i></a>
+                <a href="https://github.com/msingletary"><i class="fa fa-github navicon aboutLink"></i></a>
               </p>
           </div>
 
@@ -40,8 +73,7 @@
                     <p class="info">
                       Software Engineering major<BR />@ Auburn University
                     </p>
-                    <a class="info" role="button" data-toggle="collapse"
-                        href="#moreEducation" aria-expanded="true" aria-controls="moreEducation">read more</a>
+                    <div class="info infoLink">read more</div>
                   </div>
               </div>
 
@@ -54,8 +86,7 @@
                        @ Google - Inbox by Gmail (Summer 2015)<BR />
                        + Facebook (Summer 2016)
                     </p>
-                    <a class="info" role="button" data-toggle="collapse"
-                        href="#moreInternship" aria-expanded="true" aria-controls="moreInternship">read more</a>
+                    <div class="info infoLink">read more</div>
                   </div>
               </div>
 
@@ -66,8 +97,7 @@
                      <p class="info">
                      Undergraduate research, REU, ACM competitive programming
                     </p>
-                    <a class="info" role="button" data-toggle="collapse"
-                        href="#moreExperience" aria-expanded="true" aria-controls="moreExperience">read more</a>
+                    <div class="info infoLink">read more</div>
                   </div>
               </div>
 
@@ -80,8 +110,7 @@
                       SWE internship @ a Spanish startup<BR />
                       Spanish language courses
                     </p>
-                    <a class="info" role="button" data-toggle="collapse"
-                        href="#moreAbroad" aria-expanded="true" aria-controls="moreAbroad">read more</a>
+                    <div class="info infoLink">read more</div>
                   </div>
               </div>
           </div>
@@ -90,18 +119,19 @@
 
 
         <!-- RIGHT: content panel -->
-        <div id="right" class="col-xs-6 col-md-6 col-lg-5">
+        <div id="right" class="col-xs-12 col-md-6 col-lg-6">
           <!-- content panel -->
           <div id="panel" class="panel">
-            <div id="moreEducation" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="education">
+          <div class="anchor" id="education"></div>
+            <div id="moreEducation" class="panel-collapse collapse" role="tabpanel" aria-labelledby="education">
               <div class="panel-body">
                 <!--EDUCATION SECTION -->
-                <h2 id="education" name="education">Education</h2>
+                <h2>Education</h2>
                   <!-- auburn -->
-                  <div class="col-xs-12 col-sm-10 col-md-10 col-lg-9 informationContainer">
+                  <div class="col-xs-10 col-sm-10 col-md-10 col-lg-9 informationContainer">
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 information">
                       <p><t>Bachelor of Software Engineering</t><br/>
-                      2013 <i class="fa fa-caret-right"></i> Expected Graduation Date: May 2017<br />
+                      2013 <i class="fa fa-caret-right"></i> Expected Graduation: May 2017<br />
                       Auburn University, Auburn, AL<br/>
                       GPA: 3.64</p>
                     </div>
@@ -116,23 +146,26 @@
                       Throughout my time at Auburn, I've continued to
                       develop my skills through a combination of academics,
                       projects, and industry work experience.
+
+                      My Software Engineering degree has provided me with both a
+                      strong basis in computer science fundamentals as well as
+                      the problem solving skills taught in the college of engineering.
                       </p>
                       <P>
-                        Some courses I've taken: Intro to Algorithms, Operating Systems,
-                        Computer Architecture,
-                        Discrete Math, Digital Logic Circuits, Java, C++
+                      Some courses I've taken: Intro to Algorithms, Operating Systems,
+                      Computer Architecture,
+                      Discrete Math, Digital Logic Circuits, Java, C++
                       </P>
                     </div>
                   </div>
-                  <div class="col-xs-12 col-sm-2 col-md-2 col-lg-3">
+                  <div class="col-xs-2 col-sm-2 col-md-2 col-lg-3">
                     <img class="img-responsive center-block icon" src="media/logo_auburn.svg">
                   </div>
-
 
                   <div class="col-xs-10 col-xs-offset-1"><hr></div>
 
                   <!-- sevilla -->
-                  <div class="col-xs-12 col-sm-10 col-md-10 col-lg-9 informationContainer">
+                  <div class="col-xs-10 col-sm-10 col-md-10 col-lg-9 informationContainer">
                     <div class="col-xs-12 col-sm-8 col-md-7 col-lg-7 information">
                       <p><t>University of Seville</t><br/>
                         January 2016 <i class="fa fa-caret-right"></i> May 2016<br />
@@ -154,150 +187,219 @@
                       </p>
                     </div>
                   </div>
-                  <div class="col-xs-12 col-sm-2 col-md-2 col-lg-3">
+                  <div class="col-xs-2 col-sm-2 col-md-2 col-lg-3">
                     <p><img class="img-responsive center-block icon" src="media/logo_sevilla.png"></p>
                   </div>
               </div>
             </div>
 
-            <div id="moreInternship" class="panel-collapse collapse" role="tabpanel" aria-labelledby="internship">
+            <div class="anchor" id="internships"></div>
+            <div id="moreInternships" class="panel-collapse collapse" role="tabpanel" aria-labelledby="internship">
               <div class="panel-body">
 
                 <!-- INTERNSHIP SECTION -->
-                <h2 id="internship" name="internship">Internships</h2>
+                <h2>Internships</h2>
 
-                <div class="col-xs-12 box">
 
                   <!-- glamping hub -->
-                  <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10 information">
-                    <div class="col-xs-12">
+                  <div class="col-xs-10 col-sm-10 col-md-10 col-lg-9 information">
+                    <div class="col-xs-12 col-sm-7 information">
                       <p>
                       <t>Software Engineering Intern</t><br/>
-                      anuary 2016 <i class="fa fa-caret-right"></i> May 2016<br />
-                      Glamping Hub<br/>
+                      <em>Glamping Hub</em><br/>
                       Seville, Spain<br/>
                       </p>
                     </div>
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                      <ul>
-                      <li>Used Python 2.7 to generate reports containing information of interest acquired from Django models; Implemented Django forms to allow input of what information is needed for a report</li>
-                      <li>Utilized Celery task queue to queue report generation tasks and deliver reports when ready, thus creating a simpler, faster workflow for internal users</li>
-                      <li>Used Bootstrap framework tocreate a new page to display all frequently asked questions about the platform in an organized manner</li>
-                      </ul>
-                    <span class="label label-django">Django</span>
-                    <span class="label label-bootstrap">Bootstrap</span>
-                    <span class="label label-javascript">JavaScript</span>
-                    <span class="label label-git">Git</span>
+                    <div class="col-xs-12 col-sm-4 col-md-5 col-lg-5 text-right">
+                      <p>January 2016 <i class="fa fa-caret-right"></i> May 2016</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 information">
+                      <p>
+                      Working in an international business setting forced me to
+                      improve both my English and Spanish communication skills.
+                      The experience of working at a small startup with unfamiliar
+                      technologies required me to be a self-starter able to keep
+                      up in a fast paced environment.
+                      </p>
+                      <p>
+                      I completed a variety of projects while working at Glamping Hub
+                      using Python 2.7, Django, Bootstrap, and HTML/CSS, such as:
+                      </p>
+                      <p>
+                      I created a report generation + task queue <EM>program</EM>
+                      that eliminated 10+ minutes of idle waiting time for several
+                      internal teams.
+                      To do this, I implemented a new Django form to specify
+                      what input to include in the report. I add the
+                      report generation task to a Celery task queue that then
+                      emails the reports when they are completed
+                      and all information has been retrieved from the database.
+                      </p>
+                      <p>
+                        I utilized the Bootstrap framework & HTML/CSS to create
+                        several new feature pages including a page that contains
+                        specific information from the Django models displayed in an
+                        organized way and a FAQ page.
+                      </p>
+                      <p>
+                      <span class="label label-django">Django</span>
+                      <span class="label label-python">Python</span>
+                      <span class="label label-bootstrap">Bootstrap</span>
+                      <span class="label label-javascript">JavaScript</span>
+                      <span class="label label-git">Git</span>
+                      </p>
                     </div>
                   </div>
-                  <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+                  <div class="col-xs-2 col-sm-2 col-md-2 col-lg-3">
                     <img class="img-responsive center-block" src="media/logo_glampinghub.png">
                   </div>
 
                   <div class="col-xs-10 col-xs-offset-1"><hr></div>
 
-
                   <!-- google -->
-                  <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10 information">
-                      <div class="col-xs-12">
+                  <div class="col-xs-10 col-sm-10 col-md-10 col-lg-9 information">
+                      <div class="col-xs-12 col-sm-7 information">
                         <p>
                         <t>Engineering Practium Intern</t><br/>
-                        May 2015 <i class="fa fa-caret-right"></i> August 2015<br />
-                        Google<br/>
+                        <em>Google</em><br/>
                         Mountain View, CA<br/>
                         Inbox by Gmail team<br/>
                         </p>
                       </div>
-                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                        <ul>
-                        <li>Developed features for the Inbox by Gmail web app using Java, JavaScript, and HTML/CSS</li>
-                        <li>Implemented new feature which allows users to customize specific settings during the first visit to the app in order to improve user understanding of the product</li>
-                        <li>Thoroughly tested all work with unit tests and WebDriver automated tests</li>
-                        <li>Ensured the feature displays correctly in all supported languages and that it meets accessibility standards</li>
-                        </ul>
+                      <div class="col-xs-12 col-sm-4 col-md-5 col-lg-5 text-right">
+                        May 2015 <i class="fa fa-caret-right"></i> August 2015
+                      </div>
+                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 information">
+                        <p>
+                          I developed features for the Inbox by Gmail web app
+                          using Java, JavaScript, and HTML/CSS.
+                          My main project involved the implementation of a new
+                          feature to allow users to customize their inbox settings
+                          during their first visit to the app. This allows users
+                          to have a better initial experience and understanding
+                          of the product.
+                        </p>
+                        <p>
+                          I learned a great deal about good coding practices,
+                          code style, and how to write maintainable software,
+                          which are all skills I have continued to focus on since.
+                          I thoroughly tested all work with unit tests and
+                          WebDriver automated tests.
+                          I ensured that my feature displays correctly in all
+                          supported languages and that it meets accessibility standards
+                        </p>
+                        <p>
                         <span class="label label-javascript">JavaScript</span>
                         <span class="label label-java">Java</span>
                         <span class="label label-html">HTML/CSS</span>
                         </p>
                       </div>
                   </div>
-                  <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+                  <div class="col-xs-2 col-sm-2 col-md-2 col-lg-3">
                     <img class="img-responsive center-block googlelogo" src="media/logo_google.png">
                     <img class="img-responsive center-block googlelogo inboxlogo" src="media/logo_inbox.png">
                   </div>
-                </div>
 
               </div>
             </div>
-            <div id="moreExperience" class="panel-collapse collapse" role="tabpanel" aria-labelledby="experience">
+
+
+            <div class="anchor" id="experience"></div>
+            <div id="moreExperiences" class="panel-collapse collapse" role="tabpanel" aria-labelledby="experience">
               <div class="panel-body">
                 <!-- EXPERIENCES SECTION -->
-                <h2 id="experience">Other things I've done</h2>
+                <h2>Other things I've done</h2>
                 <!-- research auburn 2 -->
-                <div class="col-xs-12 col-sm-10 col-md-10 col-lg-9 information">
-                    <div class="col-xs-12 col-sm-8 col-md-6 col-lg-7">
+                <div class="col-xs-10 col-sm-10 col-md-10 col-lg-9 information">
+                    <div class="col-xs-12 col-sm-8 col-md-6 col-lg-6">
                       <p>
-                      <t>Research Assistant</t><br/>
-                      Auburn University<br/>
+                      <t>Research Assistant</t><br />
+                      <em>Auburn University</em><br/>
                       Auburn, AL<br/>
                       </p>
                     </div>
-                    <div class="col-xs-12 col-sm-4 col-md-6 col-lg-5 date text-right">
-                      <p>August 2015 <i class="fa fa-caret-right"></i> December 2015</p>
+                    <div class="col-xs-12 col-sm-4 col-md-5 col-lg-6 text-right">
+                      August 2015 <i class="fa fa-caret-right"></i> December 2015
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                      <ul>
-                      <li>Implemented program to generate AspectJ code used to record data from a Repast simulation model’s execution</li>
-                      <li>Wrote a java program to develop a FSA incrementally from this data</li>
-                      </ul>
+                      <p>
+                        I implemented a Java + AspectJ program that generates
+                        AspectJ code based on minimal information from a user.
+                        This AspectJ code then records data to a Repast
+                        simulation model's execution.
+                      </p>
+                      <p>
+                        I created a Java program that develops a FSA incrementally
+                        from the data recorded from a model execution.
+                      </p>
+                      <p>
+                        These programs together make it easier
+                      </p>
                       <span class="label label-java">Java</span>
                       <span class="label label-aspectj">AspectJ</span>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-2 col-md-2 col-lg-3">
+                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-3">
                   <img class="img-responsive center-block" src="media/logo_auburn.svg">
                 </div>
 
                 <div class="col-xs-10 col-xs-offset-1"><hr></div>
-
 
                 <!-- research auburn 1 -->
-                <div class="col-xs-12 col-sm-10 col-md-10 col-lg-9 information">
-                    <div class="col-xs-12 col-sm-8 col-md-6 col-lg-7">
-                      <p>
+                <div class="col-xs-10 col-sm-10 col-md-10 col-lg-9 information">
+                  <div class="col-xs-12 col-sm-8 col-md-6 col-lg-6">
+                    <p>
                     <t>Research Assistant</t><br/>
-                    September 2014 <i class="fa fa-caret-right"></i> May 2015<br />
-                    Auburn University<br/>
+                    <em>Auburn University</em><br/>
                     Auburn, AL<br/>
                     </p>
-                    </div>
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                      <ul>
-                      <li>Designed and implementedJava program which stores input in a custom tree data structure, and provides query and delete functionality using the OWL Ontology API</li>
-                      <li>Produced structured XML files by recursively retrieving information froman ontology model</li>
-                      </ul>
-                      <span class="label label-java">Java</span>
-                      <span class="label label-aspectj">OWL API</span>
-                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-4 col-md-5 col-lg-6 text-right">
+                    September 2014 <i class="fa fa-caret-right"></i> May 2015
+                  </div>
+                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <p>
+                      I designed and implemented a custom tree data structure
+                      in Java using the OWL Ontology API. This data structure
+                      was used to organize information about a simulation model
+                      definition. I created add, query, and delete functionality
+                      so that this program could be utilized by a user interface's
+                      backend.
+                    </p>
+                    <p>
+                      When the experiment definition is complete,
+                      this program produces structured XML files
+                      by recursively retrieving information about all objects
+                      stored in the ontology tree. This XML description of the
+                      model is then used to control the model execution.
+                    </p>
+                    <span class="label label-java">Java</span>
+                    <span class="label label-aspectj">OWL API</span>
+                  </div>
                 </div>
-                <div class="col-xs-12 col-sm-2 col-md-2 col-lg-3">
+                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-3">
                   <img class="img-responsive center-block" src="media/logo_auburn.svg">
                 </div>
 
                 <div class="col-xs-10 col-xs-offset-1"><hr></div>
 
-
                 <!-- acm -->
-                <div class="col-xs-12 col-sm-10 col-md-10 col-lg-9 information">
-                    <div class="col-xs-12">
-                      <p>
+                <div class="col-xs-10 col-sm-10 col-md-10 col-lg-9 information">
+                  <div class="col-xs-12 col-sm-8 col-md-6 col-lg-7">
+                    <p>
                       <t>Competitive Programming Team</t><br/>
-                      August 2013 <i class="fa fa-caret-right"></i> Present<br />
-                      ACM (Association of Computing Machinery)<br/>
+                      ACM <span class="smallText">(Association of Computing Machinery)</span><br/>
                       Auburn University<br/>
-                      </p>
+                    </p>
+                  </div>
+                    <div class="col-xs-12 col-sm-4 col-md-5 col-lg-5 text-right">
+                      August 2013 <i class="fa fa-caret-right"></i> Present
                     </div>
                     <div class="col-xs-12">
+                      <p>
+                        Wrote solutions to logic puzzles in various programming
+                        languages individually and as a team.
+                      </p>
                       <ul>
                       <li>Southeast Regional ICPC Competition, Division II</li>
                       <li>10th place, 2014</li>
@@ -305,59 +407,105 @@
                     </ul>
                     <span class="label label-java">Java</span>
                     <span class="label label-python">Python</span>
-                      <span class="label">C++</span>
+                    <span class="label">C++</span>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-2 col-md-2 col-lg-3">
+                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-3">
                   <img class="img-responsive center-block" src="media/logo_acm.png">
                 </div>
 
-
                 <div class="col-xs-10 col-xs-offset-1"><hr></div>
 
-
-
                 <!-- north texas reu -->
-                <div class="col-xs-12 col-sm-10 col-md-10 col-lg-9 information">
-                    <div class="col-xs-12">
+                <div class="col-xs-10 col-sm-10 col-md-10 col-lg-9 information">
+                    <div class="col-xs-12 col-sm-8 col-md-6 col-lg-8">
                       <p>
-                      <t>Research Experience for Undergraduates (REU)</t><br/>
-                      May 2014 <i class="fa fa-caret-right"></i> July 2014<br />
+                      <t>(REU) Research Experience for Undergraduates</t><br/>
                       University of North Texas<br/>
                       Denton, Texas<br/>
                       </p>
                     </div>
+                    <div class="col-xs-12 col-sm-4 col-md-5 col-lg-4 text-right">
+                      <p>May 2014 <i class="fa fa-caret-right"></i> July 2014</p>
+                    </div>
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                      <ul>
-                      <li>Co-authored research paper, accepted for publication</li>
-                      <li>Used Android application GUIs to automatically generate jUnit test cases</li>
-                      <li>Wrote C++ program to convert jUnit tests to XML format for use with existing test case reduction algorithms designed for web applications</li>
-                      </ul>
+                      <p>
+                        I worked as part of a team of students to research new
+                        techniques for automating the reduction of test cases,
+                        with a focus on Android applications.
+                        We used Android application GUIs to automatically generate
+                        jUnit test cases that represent all possible paths
+                        through the application's interface.
+                        I wrote a C++ program to convert jUnit tests to XML format
+                        for use with existing test case reduction algorithms
+                        designed for web applications.
+                      </p>
+                      <p>
+                        Co-authored a research paper summarizing our research and results;
+                        accepted for publication.
+                      </p>
                       <span class="label">C++</span>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-2 col-md-2 col-lg-3">
+                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-3">
                   <img class="img-responsive center-block" src="media/logo_unt.png">
                 </div>
+              </div>
+            </div>
+            <!-- / experience section -->
+
+            <div class="anchor" id="abroad"></div>
+            <div id="moreAbroad" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="experience">
+              <div class="panel-body">
+                <h2>Studying & Working Abroad</h2>
+                  <!-- auburn -->
+                  <div class="col-xs-10 col-sm-10 col-md-10 col-lg-9 informationContainer">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 information">
+                      <p>
+                      <t>Living abroad</t>
+                      </p>
+                      <p>
+                        The 4 months I spent living in Seville, Spain - a beautiful city
+                        in the southern region of Andalusia - were simply amazing.
+                        I enjoyed the opportunity to be immersed in the culture and
+                        I formed many new friendships. I took advantage of the close
+                        proximity to the rest of Europe and travelled often,
+                        broadening my horizons further.
+                      </p>
+                      <p>
+                        It was also a time of both personal and professional
+                        growth. Adjusting to a new culture was difficult at times,
+                        and learning the language did not come as easily as I had
+                        hoped. However, for every difficulty I encountered,
+                        I found that I was always rewarded for the hard work I put
+                        in to adjust to the cultural differences and the foreign language.
+                      </p>
+                      <p>
+                      <t>Working abroad</t>
+                      </p>
+                      <p>
+                        I interned with a small group of Spanish developers and
+                        had the opportunity to experience working in another
+                        culture. My coworkers spoke varying levels of English,
+                        and this forced me to think carefully about what I
+                        wanted to say whether because I did not want to hinder
+                        their understanding of me with excess, meaningless words,
+                        or because my Spanish is limited and I was only able to say
+                        things in a straightforward way.
+                        This experience has made me speak more
+                        intentionally whenever I speak, and has made me a stronger
+                        communicator overall.
+                      </p>
+                      <img class="img-responsive center-block" src="media/Sevilla_1.jpg">
+                    </div>
+                  </div>
 
               </div>
             </div>
-
-          <div id="moreAbroad" class="panel-collapse collapse" role="tabpanel" aria-labelledby="experience">
-            <div class="panel-body">
-              4; STUDY ABROAD
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-            </div>
-          </div>
         </div>
           <!-- end panel -->
         </div>
         <!-- end right -->
-
       </div>
       <!-- end panel group -->
     </div>
@@ -371,13 +519,6 @@
     <script>
       $(document).ready(function() {
 
-        $('#panel .collapse').on('show.bs.collapse', function (e) {
-          var actives = $('#panel').find('.in, .collapsing');
-          actives.each( function (index, element) {
-              $(element).collapse('hide');
-          })
-        });
-
         changeLayout($(this).width());
         $(window).resize(function() {
           console.log('size:' + $(this).width());
@@ -385,37 +526,48 @@
         });
 
         $(".tile").click(function(e) {
+          console.log(e);
           e.preventDefault();
           var actives = $('#panel').find('.in, .collapsing');
+          var clickedName = event.currentTarget.id;
+          clickedName = clickedName.substring(4, clickedName.length);
+
           actives.each( function (index, element) {
-              $(element).collapse('hide');
+              var currentlyShown = $(element).attr('id');
+              currentlyShown = currentlyShown.substring(4, currentlyShown.length);
+              if (currentlyShown != clickedName) {
+                console.log('')
+                $(element).collapse('hide');
+              }
           })
-          if (event.currentTarget.id === 'tileInternships') {
-            $('#moreInternship').collapse('show');
-          } else if (event.currentTarget.id === 'tileEducation') {
-            $('#moreEducation').collapse('show');
-          } else if (event.currentTarget.id === 'tileExperiences') {
-            $('#moreExperience').collapse('show');
-          } else if (event.currentTarget.id === 'tileAbroad') {
-            $('#moreAbroad').collapse('show');
-          }
+          var clickedContent = '#more' + clickedName;
+          $(clickedContent).collapse('show');
         });
 
 
       });  ///document ready
 
-
-
-      // change components depending on screen size:
+      // change which components are displayed depending on screen size:
       var changeLayout = function(size) {
-        if (size >= 900) {
+        if (size >= 990) {
           // large layout
+          $("#navBarContainer").hide();
           $("#left").show();
+          $('#moreEducation').addClass('collapse');
+          $('#moreInternships').addClass('collapse');
+          $('#moreExperiences').addClass('collapse');
+          $('#moreAbroad').addClass('collapse');
           console.log('large layout!');
         }
-        else if (size < 900) {
+        else if (size < 990) {
           $("#left").hide();
-            console.log('small layout por favor');
+          $("#navBarContainer").show();
+          $("body").addClass('topBuffer');
+          $('#moreEducation').removeClass('collapse');
+          $('#moreInternships').removeClass('collapse');
+          $('#moreExperiences').removeClass('collapse');
+          $('#moreAbroad').removeClass('collapse');
+          console.log('small layout por favor');
         }
       };
 
