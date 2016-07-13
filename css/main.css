@@ -1,4 +1,4 @@
-#right {
+#panelContent {
 	/*@media (max-width: 900px) {
 		margin-left: 10px;
 	}
@@ -7,7 +7,7 @@
 	}*/
 }
 
-#left {
+#navPanel {
 	/*display: none;*/
 	padding: 0px;
 }

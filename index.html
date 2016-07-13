@@ -12,6 +12,16 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-76822779-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
   </head>
 
   <body data-spy="scroll" data-target="#navbar" data-offset-top="50">
@@ -35,7 +45,6 @@
                 <li class="active"><a href="#education">Education<span class="sr-only">(current)</span></a></li>
                 <li><a href="#internships">Internships</a></li>
                 <li><a href="#experience">Experiences</a></li>
-                <li><a href="#abroad">Study Abroad</a></li>
               </ul>
 
               <ul class="nav navbar-nav navbar-right">
@@ -51,7 +60,7 @@
     <div class="container-fluid">
       <div class="row top">
         <!-- navigation tiles -->
-        <div id="left" class="col-xs-6">
+        <div id="navPanel" class="col-xs-6">
           <!-- name + about me -->
           <div class="col-xs-12 aboutBox">
              <h1>Meredith Singletary</h1>
@@ -100,24 +109,11 @@
                     <div class="info infoLink">read more</div>
                   </div>
               </div>
-
-              <div id="tileAbroad" class="tile col-xs-6 abroad">
-                <img class="img-responsive" src="media/tile_spain.jpg" alt="">
-                  <div class="overlay">
-                    <h2>Study & Work Abroad</h2>
-                    <p class="info">
-                      Spring 2016 in Seville, Spain<br />
-                      SWE internship @ a Spanish startup<BR />
-                      Spanish language courses
-                    </p>
-                    <div class="info infoLink">read more</div>
-                  </div>
-              </div>
           </div>
-        <!-- end left  -->
+        <!-- end left navPanel  -->
         </div>
 
-        <div id="center" class="col-xs-12 col-md-6">
+        <div id="mobileSummary" class="col-xs-12 col-md-6">
           <div class="aboutBox mobile">
              <h1>Meredith Singletary</h1>
              <div class="aboutme">
@@ -168,12 +164,12 @@
                   August 2013 - Present
                 </li>
                 <li>
-                  <em>Undergraduate Research Assistant, </em><br/>
+                  <em>Undergraduate Research Assistant</em><br/>
                   Auburn University<br/>
                   August 2015 - December 2015
                 </li>
                 <li>
-                  <em>Undergraduate Research Assistant, </em><br/>
+                  <em>Undergraduate Research Assistant</em><br/>
                   Auburn University<br/>
                   September 2014 - May 2015
                 </li>
@@ -192,7 +188,7 @@
         </div>
 
         <!-- RIGHT: content panel -->
-        <div id="right" class="col-xs-12 col-md-6">
+        <div id="contentPanel" class="col-xs-12 col-md-6">
           <!-- content panel -->
           <div id="panel" class="panel">
           <div id="education" class="anchor"></div>
@@ -291,7 +287,7 @@
                       Working in an international business setting forced me to
                       improve both my English and Spanish communication skills.
                       The experience of working at a small startup with unfamiliar
-                      technologies required me to be a self-starter able to keep
+                      technologies required me to be a self-starter capable keep
                       up in a fast paced environment.
                       </p>
                       <p>
@@ -526,59 +522,10 @@
               </div>
             </div>
             <!-- / experience section -->
-
-            <div class="anchor" id="abroad"></div>
-            <div id="moreAbroad" class="panel-collapse collapse" role="tabpanel" aria-labelledby="experience">
-              <div class="panel-body">
-                <h2>Studying & Working Abroad</h2>
-                  <!-- auburn -->
-                  <div class="col-xs-10 col-sm-10 col-md-10 col-lg-9 informationContainer">
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 information">
-                      <p>
-                      <t>Living abroad</t>
-                      </p>
-                      <p>
-                        The 4 months I spent living in Seville, Spain - a beautiful city
-                        in the southern region of Andalusia - were simply amazing.
-                        I enjoyed the opportunity to be immersed in the culture and
-                        I formed many new friendships. I took advantage of the close
-                        proximity to the rest of Europe and travelled often,
-                        broadening my horizons further.
-                      </p>
-                      <p>
-                        It was also a time of both personal and professional
-                        growth. Adjusting to a new culture was difficult at times,
-                        and learning the language did not come as easily as I had
-                        hoped. However, for every difficulty I encountered,
-                        I found that I was always rewarded for the hard work I put
-                        in to adjust to the cultural differences and the foreign language.
-                      </p>
-                      <p>
-                      <t>Working abroad</t>
-                      </p>
-                      <p>
-                        I interned with a small group of Spanish developers and
-                        had the opportunity to experience working in another
-                        culture. My coworkers spoke varying levels of English,
-                        and this forced me to think carefully about what I
-                        wanted to say whether because I did not want to hinder
-                        their understanding of me with excess, meaningless words,
-                        or because my Spanish is limited and I was only able to say
-                        things in a straightforward way.
-                        This experience has made me speak more
-                        intentionally whenever I speak, and has made me a stronger
-                        communicator overall.
-                      </p>
-                      <img class="img-responsive center-block" src="media/Sevilla_1.jpg">
-                    </div>
-                  </div>
-
-              </div>
-            </div>
-        </div>
+          </div>
           <!-- end panel -->
         </div>
-        <!-- end right -->
+        <!-- end contentPanel -->
       </div>
       <!-- end panel group -->
     </div>
@@ -624,22 +571,26 @@
       var changeLayout = function(size) {
         if (size >= 990) {
           // large layout
+          $("#navPanel").show();
+          $("#panelContent").show();
+          $("#mobileSummary").hide();
           $("#navBarContainer").hide();
-          $("#left").show();
+
           $('#moreEducation').addClass('collapse');
           $('#moreInternships').addClass('collapse');
           $('#moreExperiences').addClass('collapse');
-          $('#moreAbroad').addClass('collapse');
           console.log('large layout!');
         }
         else if (size < 990) {
-          $("#left").hide();
           $("#navBarContainer").show();
+          $("#mobileSummary").show();
+          $("#panelContent").show();
+          $("#navPanel").hide();
+
           $("body").addClass('topBuffer');
           $('#moreEducation').removeClass('collapse');
           $('#moreInternships').removeClass('collapse');
           $('#moreExperiences').removeClass('collapse');
-          $('#moreAbroad').removeClass('collapse');
           console.log('small layout por favor');
         }
       };
