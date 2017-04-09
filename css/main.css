@@ -107,6 +107,17 @@ ul {
 	font-weight: bold;
 }
 
+.resume {
+	background-color: #4C4C4C;
+	display: inline-block;
+	margin: 0 0 10px 0;
+	padding: 0 10px;
+}
+
+.resume a {
+	color: #ffffff;
+}
+
 
 /**
 	navigation tiles

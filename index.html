@@ -63,11 +63,15 @@
         <div id="navPanel" class="col-xs-6">
           <!-- name + about me -->
           <div class="col-xs-12 aboutBox">
-             <h1>Meredith Singletary</h1>
-             <div class="aboutme">
-             <h4><em>software engineering student</em><br>graduating May 2017</h4>
-            </div>
-             <p>
+              <h1>Meredith Singletary</h1>
+              <div class="aboutme">
+                <h4><em>software engineering student</em><br>graduating May 2017</h4>
+              </div>
+              <div class="resume">
+                <a href="https://www.dropbox.com/s/qt4yaa8ke6omxg9/Resume.pdf?dl=0">resume</a>
+              </div>
+
+              <p>
                 <a href="mailto:meredithsingletary@gmail.com"><i class="fa fa-envelope navicon aboutLink"></i></a>
                 <a href="https://linkedin.com/in/meredithsingletary"><i class="fa fa-linkedin-square navicon aboutLink"></i></a>
                 <a href="https://github.com/msingletary"><i class="fa fa-github navicon aboutLink"></i></a>
@@ -91,9 +95,9 @@
                   <div class="overlay">
                      <h2>Internships</h2>
                      <p class="info">
-                     @ Glamping Hub (Spring 2016)<BR />
-                       @ Google - Inbox by Gmail (Summer 2015)<BR />
-                       + Facebook (Summer 2016)
+                      @ Facebook (Summer 2016) <BR />
+                      @ Glamping Hub (Spring 2016)<BR />
+                      @ Google - Inbox by Gmail (Summer 2015)<BR />
                     </p>
                     <div class="info infoLink">read more</div>
                   </div>
@@ -105,6 +109,17 @@
                      <h2>Other Experience</h2>
                      <p class="info">
                      Undergraduate research, REU, ACM competitive programming
+                    </p>
+                    <div class="info infoLink">read more</div>
+                  </div>
+              </div>
+
+              <div id="tileAboutMe" class="tile col-xs-6 projects">
+                  <img class="img-responsive" src="media/aboutme_photo.jpg" alt="">
+                  <div class="overlay">
+                     <h2>About Me</h2>
+                     <p class="info">
+                     
                     </p>
                     <div class="info infoLink">read more</div>
                   </div>
@@ -143,6 +158,10 @@
 
               <h2>Internships</h2>
               <ul>
+                <li>
+                  <em>Facebook:</em>
+                  May 2016 - August 2016
+                </li>
                 <li>
                   <em>Glamping Hub:</em>
                   January 2016 - May 2016
@@ -202,7 +221,7 @@
                       <p><t>Bachelor of Software Engineering</t><br/>
                       2013 <i class="fa fa-caret-right"></i> Expected Graduation: May 2017<br />
                       Auburn University, Auburn, AL<br/>
-                      GPA: 3.64</p>
+                      GPA: 3.69</p>
                     </div>
                     <div class="col-sm-12 col-md-12 col-lg-12 information">
                       <p>
@@ -269,6 +288,46 @@
                 <!-- INTERNSHIP SECTION -->
                 <h2>Internships</h2>
 
+                  <!-- facebook -->
+                  <div class="col-xs-10 col-sm-10 col-md-10 col-lg-9 information">
+                    <div class="col-xs-12 col-sm-7 information">
+                      <p>
+                      <t>Software Engineering Intern</t><br/>
+                      <em>Facebook</em><br/>
+                      Menlo Park, California<br/>
+                      </p>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-5 col-lg-5 text-right">
+                      <p>May 2016 <i class="fa fa-caret-right"></i> August 2016</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 information">
+                      <p>
+                      I worked on a product intelligence system used by various teams Facebook 
+                      products to provide an improved experience to Facebook users. 
+                      I made improvements to network detection process by implementing a 
+                      new python-backed storage method for the detection knowledge.
+                      My work on this resulted in a 4% reduction of incorrect API results.
+                      </p>
+                      <p>
+                      Additionally, I used PHP/Hack to build a tool to display the current 
+                      state of my team’s detection logic, allowing downstream users to 
+                      remain informed and aware of changes in data consistency. As part of 
+                      this work, I met with potential users to define requirements for this tool, 
+                      and then implemented features that would be most useful to these users, 
+                      including search, filtering displayed results, and notification of changes.
+                      </p>
+                      <p>
+                      <span class="label label-django">PHP</span>
+                      <span class="label label-python">Python</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-xs-2 col-sm-2 col-md-2 col-lg-3">
+                    <img class="img-responsive center-block" src="media/logo_facebook.png">
+                  </div>
+
+                  <div class="col-xs-10 col-xs-offset-1"><hr></div>
+
 
                   <!-- glamping hub -->
                   <div class="col-xs-10 col-sm-10 col-md-10 col-lg-9 information">
@@ -284,32 +343,30 @@
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 information">
                       <p>
-                      Working in an international business setting forced me to
-                      improve both my English and Spanish communication skills.
-                      The experience of working at a small startup with unfamiliar
-                      technologies required me to be a self-starter capable keep
-                      up in a fast paced environment.
+                        Working in an international business setting forced me to
+                        improve both my English and Spanish communication skills.
+                        My work at this small startup involved a variety of modern 
+                        technologies, and I completed bug fixes and new features on both
+                        the frontend and backend of the Glamping Hub website.
                       </p>
+                      <!-- <p>
+                        I completed a variety of projects while working at Glamping Hub
+                        using Python 2.7, Django, Bootstrap, and HTML/CSS, such as:
+                      </p> -->
                       <p>
-                      I completed a variety of projects while working at Glamping Hub
-                      using Python 2.7, Django, Bootstrap, and HTML/CSS, such as:
+                        I created a new report generation + task queue functionality
+                        that eliminated 10+ minutes of idle waiting time for several
+                        internal teams. I did this by creating a new form where users 
+                        specify which data to include in the report. When the 
+                        report generation task is finished users will receive the 
+                        report in an email.
                       </p>
-                      <p>
-                      I created a new report generation + task queue functionality
-                      that eliminated 10+ minutes of idle waiting time for several
-                      internal teams.
-                      To do this, I implemented a new Django form to specify
-                      what input to include in the report. I add the
-                      report generation task to a Celery task queue that then
-                      emails the reports when they are completed
-                      and all information has been retrieved from the database.
-                      </p>
-                      <p>
+                      <!-- <p>
                         I utilized the Bootstrap framework & HTML/CSS to create
                         several new feature pages including a page that contains
                         specific information from the Django models displayed in an
                         organized way and a FAQ page.
-                      </p>
+                      </p> -->
                       <p>
                       <span class="label label-django">Django</span>
                       <span class="label label-python">Python</span>
@@ -400,9 +457,6 @@
                       <p>
                         I created a Java program that develops a FSA incrementally
                         from the data recorded from a model execution.
-                      </p>
-                      <p>
-                        These programs together make it easier
                       </p>
                       <span class="label label-java">Java</span>
                       <span class="label label-aspectj">AspectJ</span>
@@ -522,6 +576,41 @@
               </div>
             </div>
             <!-- / experience section -->
+
+
+
+
+            <div class="anchor" id="aboutMe"></div>
+            <div id="moreAboutMe" class="panel-collapse collapse" role="tabpanel" aria-labelledby="aboutme">
+              <div class="panel-body">
+                <!-- about me SECTION -->
+                <h2>About Me</h2>
+                <!-- about me -->
+                <div class="col-xs-8 col-sm-8 col-md-8 col-lg-9 information">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                      <p>
+                        I am a Senior at Auburn University studying software engineering, graduating May 2017. I have a background in 
+                        both academic research as well as past industry experience. I have interned at both large companies and a small
+                        startup. I've worked on a variety of projects both in a team 
+                        environment and individually. In the future I am most interested in working on the business logic layer of a 
+                        web application. I am most interested in consumer applications that have a broad audience and productivity tool 
+                        applications.
+                      </p>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                      <p>
+                        <h4>Contact me:</h4>
+                        <a href="mailto:meredithsingletary@gmail.com">meredithsingletary@gmail.com</a>
+                      </p>
+                    </div>
+                </div>
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-3">
+                  <img class="img-responsive center-block" src="media/headshot.jpg">
+                </div>
+
+              </div>
+            </div>
+            <!-- / about me section -->
           </div>
           <!-- end panel -->
         </div>
