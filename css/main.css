@@ -118,6 +118,17 @@ ul {
 	color: #ffffff;
 }
 
+.resumeLink {
+	background-color: #4C4C4C;
+	display: inline-block;
+	padding: 5px;
+	text-align: center;
+}
+
+.resumeLink a {
+	color: #ffffff;
+}
+
 
 /**
 	navigation tiles
